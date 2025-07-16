@@ -1,3 +1,3 @@
 #!/bin/bash
-# Start script for Render
-java -jar target/TouristeProject-0.0.1-SNAPSHOT.jar
+# Start script for Render - not needed with Docker
+echo "Start will be handled by Docker"
