@@ -11,10 +11,10 @@ public class HomeController {
     @ResponseBody
     public String home() {
         return "TouristeProject API is running successfully! " +
-               "<br><br>Available endpoints:" +
-               "<br>• <a href='/swagger-ui.html'>API Documentation</a>" +
-               "<br>• <a href='/api/public'>Public API endpoints</a>" +
-               "<br>• <a href='/actuator/health'>Health Check</a>";
+                "<br><br>Available endpoints:" +
+                "<br>• <a href='/swagger-ui.html'>API Documentation</a>" +
+                "<br>• <a href='/api/public'>Public API endpoints</a>" +
+                "<br>• <a href='/actuator/health'>Health Check</a>";
     }
 
     @GetMapping("/health")

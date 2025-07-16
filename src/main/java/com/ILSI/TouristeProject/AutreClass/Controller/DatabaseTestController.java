@@ -20,11 +20,11 @@ public class DatabaseTestController {
             String url = connection.getMetaData().getURL();
             String user = connection.getMetaData().getUserName();
             connection.close();
-            
+
             return "Database connection successful!<br>" +
-                   "URL: " + url + "<br>" +
-                   "User: " + user + "<br>" +
-                   "Driver: " + connection.getMetaData().getDriverName();
+                    "URL: " + url + "<br>" +
+                    "User: " + user + "<br>" +
+                    "Driver: " + connection.getMetaData().getDriverName();
         } catch (Exception e) {
             return "Database connection failed: " + e.getMessage();
         }
